@@ -1,7 +1,6 @@
 package cc.brainbook.android.emptysubmitsearchview;
 
 import android.content.Context;
-import android.content.res.Resources;
 import android.util.AttributeSet;
 
 import androidx.annotation.NonNull;
@@ -25,9 +24,6 @@ public class EmptySubmitSearchView extends SearchView {
     public void setOnQueryTextListener(OnQueryTextListener listener) {
         super.setOnQueryTextListener(listener);
 
-        int autoCompleteTextViewID = Resources.getSystem().getIdentifier("search_src_text",
-                "id", "android");
-//        int autoCompleteTextViewID = getResources().getIdentifier("android:id/search_src_text", null, null);
         ((SearchAutoComplete) findViewById(R.id.search_src_text))
                 .setOnEditorActionListener((textView, i, keyEvent) -> {
                     if (listener != null) {
