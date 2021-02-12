@@ -26,7 +26,6 @@ public class EmptySubmitSearchView extends SearchView {
         super.setOnQueryTextListener(listener);
 
         int autoCompleteTextViewID = getResources().getIdentifier("android:id/search_src_text", null, null);
-
         ((SearchAutoComplete) findViewById(autoCompleteTextViewID))
                 .setOnEditorActionListener((textView, i, keyEvent) -> {
                     if (listener != null) {
