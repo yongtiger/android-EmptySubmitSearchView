@@ -11,8 +11,8 @@ buildscript {
         ]
 
         release = [
-                versionName: "0.0.4",   ///v0.0.4#init
-                versionCode: 4
+                versionName: "0.0.5",   ///v0.0.5#init
+                versionCode: 5
         ]
     }
 
